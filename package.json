@@ -1,0 +1,27 @@
+{
+  "name": "fingerhash",
+  "version": "0.1.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/fingerhash.cjs.js",
+  "module": "./dist/fingerhash.es.js",
+  "browser": "./dist/fingerhash.umd.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/fingerhash.es.js",
+      "require": "./dist/fingerhash.cjs.js",
+      "default": "./dist/fingerhash.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite-plugin-dts": "^2.1.0"
+  }
+  
+}
