@@ -7,7 +7,7 @@
   "homepage": "https://github.com/uqi-dev/fingerhash",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uqi-dev/fingerhash.git"
+    "url": "git+https://github.com/uqi-dev/fingerhash.git"
   },
   "type": "module",
   "files": [
