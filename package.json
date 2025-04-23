@@ -1,6 +1,6 @@
 {
   "name": "fingerhash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "uqi-dev",
   "description": "A library to generate a fingerprint of the user's browser and device.",
@@ -21,7 +21,8 @@
     ".": {
       "import": "./dist/fingerhash.es.js",
       "require": "./dist/fingerhash.cjs.js",
-      "default": "./dist/fingerhash.umd.js"
+      "default": "./dist/fingerhash.umd.js",
+      "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
@@ -36,6 +37,6 @@
   },
   "dependencies": {
     "blueimp-md5": "^2.19.0",
-    "remove": "^0.1.5"
+    "fingerhash": "^1.0.1"
   }
 }

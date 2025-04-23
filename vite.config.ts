@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     dts({
       insertTypesEntry: true,
-      outputDir: 'dist/types', // ensure this matches your expected path
+      outputDir: 'dist/types',
       skipDiagnostics: false,
     })
   ],

@@ -11,16 +11,13 @@ importers:
       blueimp-md5:
         specifier: ^2.19.0
         version: 2.19.0
-      remove:
-        specifier: ^0.1.5
-        version: 0.1.5
+      fingerhash:
+        specifier: ^1.0.1
+        version: 1.0.1
     devDependencies:
       '@types/blueimp-md5':
         specifier: ^2.18.2
         version: 2.18.2
-      '@types/js-md5':
-        specifier: ^0.7.2
-        version: 0.7.2
       typescript:
         specifier: ^5.0.0
         version: 5.7.3
@@ -361,9 +358,6 @@ packages:
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
-  '@types/js-md5@0.7.2':
-    resolution: {integrity: sha512-IwcFIov1JbiEToo3DgrVEwkMUR1BVlVyLjk245AzGHyyOlyddDFIeSIZO+WlhTortOa4P1PdCS8cDrTl7RW1HA==}
-
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
@@ -531,6 +525,9 @@ packages:
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
+
+  fingerhash@1.0.1:
+    resolution: {integrity: sha512-ZT3atl1NX1dzzKUOCmg4aXVkhrt03XBQ67u3pWZL7BqC8UahmMGu//qP4mxgd6qcTTtsIHcyjIiUsXCmAvMm4g==}
 
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
@@ -1346,8 +1343,6 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
-  '@types/js-md5@0.7.2': {}
-
   '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
@@ -1606,6 +1601,11 @@ snapshots:
   fill-range@7.1.1:
     dependencies:
       to-regex-range: 5.0.1
+
+  fingerhash@1.0.1:
+    dependencies:
+      blueimp-md5: 2.19.0
+      remove: 0.1.5
 
   for-each@0.3.5:
     dependencies:
