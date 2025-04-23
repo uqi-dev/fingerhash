@@ -18,7 +18,7 @@ A powerful browser fingerprinting library that generates unique visitor identifi
 ### Using npm
 
 ```bash
-npm install fingerhash
+npm install fingerhash 
 ```
 
 ### Using pnpm
