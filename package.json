@@ -4,6 +4,14 @@
   "license": "MIT",
   "author": "uqi-dev",
   "description": "A library to generate a fingerprint of the user's browser and device.",
+  "keywords": [
+    "fingerprint",
+    "browser",
+    "device",
+    "hash",
+    "fingerprinthash",
+    "browser-fingerprint"
+  ],
   "homepage": "https://github.com/uqi-dev/fingerhash",
   "repository": {
     "type": "git",
