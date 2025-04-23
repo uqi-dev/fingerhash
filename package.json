@@ -1,6 +1,6 @@
 {
   "name": "fingerhash",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "uqi-dev",
   "description": "A library to generate a fingerprint of the user's browser and device.",

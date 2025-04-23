@@ -10,6 +10,8 @@ A powerful browser fingerprinting library that generates unique visitor identifi
 - 📦 Zero dependencies
 - 🛠 TypeScript support
 - 🌐 Cross-browser compatibility
+- 📦 Multiple module formats (ESM, CJS, UMD)
+- 🌐 CDN support
 
 ## Installation
 
@@ -36,6 +38,44 @@ yarn add fingerhash
 ```bash
 bun add fingerhash
 ```
+
+### Using CDN (jsDelivr)
+
+```html
+<!-- UMD version -->
+<script src="https://cdn.jsdelivr.net/npm/fingerhash/dist/fingerhash.umd.js"></script>
+
+<!-- ESM version -->
+<script type="module">
+  import FingerHash from 'https://cdn.jsdelivr.net/npm/fingerhash/dist/fingerhash.es.js';
+</script>
+```
+
+### Using script tag
+
+```html
+<!-- UMD version -->
+<script src="path/to/fingerhash.umd.js"></script>
+<script>
+  const fingerhash = new FingerHash();
+  fingerhash.getFingerprint().then(console.log);
+</script>
+
+<!-- ESM version -->
+<script type="module">
+  import FingerHash from 'path/to/fingerhash.es.js';
+  const fingerhash = new FingerHash();
+  fingerhash.getFingerprint().then(console.log);
+</script>
+```
+
+## Module Formats
+
+FingerHash is available in multiple module formats:
+
+- **ESM** (`fingerhash.es.js`): Modern JavaScript modules
+- **CJS** (`fingerhash.cjs.js`): CommonJS modules
+- **UMD** (`fingerhash.umd.js`): Universal Module Definition
 
 ## Usage
 
