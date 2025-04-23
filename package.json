@@ -21,7 +21,8 @@
     ".": {
       "import": "./dist/fingerhash.es.js",
       "require": "./dist/fingerhash.cjs.js",
-      "default": "./dist/fingerhash.umd.js"
+      "default": "./dist/fingerhash.umd.js",
+      "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
@@ -35,6 +36,7 @@
     "vite-plugin-dts": "^2.1.0"
   },
   "dependencies": {
-    "blueimp-md5": "^2.19.0"
+    "blueimp-md5": "^2.19.0",
+    "fingerhash": "^1.0.1"
   }
 }
