@@ -1,5 +1,8 @@
-import fingerhash from "@/index";
+import FingerHash from "@/index";
 
-const hash = fingerhash.hash("Hello World");
-console.log(hash);
+const fingerhash = new FingerHash();
+
+fingerhash.getFingerprint().then((fingerprint) => {
+  console.log(fingerprint);
+});
 

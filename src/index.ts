@@ -1,5 +1,5 @@
-import fingerhash from "@/fingerhash";
+import { FingerHash } from "@/fingerhash";
 
 
 
-export default fingerhash;
+export default FingerHash;
